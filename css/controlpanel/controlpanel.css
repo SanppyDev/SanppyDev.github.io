@@ -1,0 +1,47 @@
+.panel {
+    display: flex;
+}
+.control__panel {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    width: 300px;
+    border-right: solid 1px #00000028;
+    height: 100vh;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 60px;
+    width: 150px;
+    margin-bottom: 60px;
+}
+.control__panel__btn {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border: 1px solid #00000028;
+    text-decoration: none;
+    color: #000000bb;
+    height: 40px;
+    font-weight: 600;
+    width: 90%;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+.sair {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000bb;
+}
+.planilha {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.555);
+}

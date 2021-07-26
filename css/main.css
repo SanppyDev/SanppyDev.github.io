@@ -1,0 +1,18 @@
+/* STYLESHEETS */
+    @import url("./index/header.css");
+    @import url("./index/content.css");
+    @import url("./controlpanel/controlpanel.css");
+/* STYLESHEETS */
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* FONTS */
+
+/* GLOBAL CHANGES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL CHANGES */

@@ -1,0 +1,161 @@
+.body {
+    overflow-x: hidden;
+}
+.content {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+}
+.slideshowarea{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(238, 237, 237);
+    cursor: pointer;
+}
+.slider__image {
+    height: 100%;
+    width: 100%;
+}
+.slideshow__btn {
+    transition: 0.25s;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.btn__left{
+    left: 0;
+}
+.btn__right {
+    right: 0;
+}
+.arrow {
+    height: 25px;
+    filter: opacity(0.1);
+    margin: 0 auto;
+}
+.left {
+    transform: rotateY(200deg);
+}
+.slideshowarea:hover .slideshow__btn {
+    background-color: #99959575;
+    
+}
+.slideshowarea:hover .slideshow__btn .arrow {
+    filter: opacity(1);
+    filter: invert(1);
+}
+
+.helparea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+.helparea__title {
+    text-align: center;
+    font-size: 45px;
+    color: #0053A1;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.card {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px #07102752;
+}
+.card__title {
+    text-align: center;
+    font-size: 35px;
+    color: #223D80;
+    font-weight: 100;
+}
+.card__text {
+    text-align: center;
+    color: #174357;
+    font-size: 14px;
+    
+}
+
+.login__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: fixed;
+    top:1000;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.801);
+    transform: 2s;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+}
+.login__title {
+    color: #000000f1;
+    font-size: 25px;
+}
+.login__input__area {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+.login__input {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #0095f8be;
+    font-size: 25px;
+}
+.login__btn {
+    height: 40px;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: white;
+    background-color: #0095f8be;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.recover__password {
+    text-decoration: none;
+    color: #0095f8be;
+    font-size: 14px;
+}
+
+
+.login__input::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+}
