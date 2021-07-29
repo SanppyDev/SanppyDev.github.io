@@ -58,13 +58,17 @@
 .helparea__title {
     text-align: center;
     font-size: 45px;
+    width: 80%;
     color: #0053A1;
     font-weight: bold;
     margin-bottom: 60px;
 }
 .cards__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     gap: 50px;
 }
 .card {
