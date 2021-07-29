@@ -48,19 +48,21 @@
 
 .helparea{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    padding: 5px 100px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #ffffff;
 }
+.help__text {
+    width: 80%;
+}
 .helparea__title {
     text-align: center;
     font-size: 45px;
-    width: 80%;
+    width: 95%;
     color: #0053A1;
     font-weight: bold;
     margin-bottom: 60px;
@@ -134,4 +136,52 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu__btns__container {
+        display: none;
+    }
+    .video {
+        margin-bottom: 40px;
+    }
+    .helparea__title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .hamburguer__menu {
+        display: block;
+        position: relative;
+        background-image: url("/img/icons/menu_icons/hamburguer.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40px;
+        width: 40px;
+        filter: opacity(0.9);
+    }
+    .mob__menu {
+        position: absolute;
+        display: grid;
+        grid-template-rows: 100px 80px 80px 80px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        top: 0;
+        right: -700px;
+        background-color: white;
+        height: 100vh;
+        width: 80%;
+        box-shadow: 0px 0px 50px 100px rgba(0, 0, 0, 0.808);
+        padding: 40px 0 40px 0;
+        transition: 0.2s;
+    }
+    .menu__btn {
+        border-bottom: 1px solid rgba(0, 0, 255, 0.144);
+        padding: 40px;
+    }
+    .mob__logo{
+        width: 200px;
+        height: 60px;
+    }
 }
