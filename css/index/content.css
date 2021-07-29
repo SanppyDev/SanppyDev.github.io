@@ -4,21 +4,13 @@
 .content {
     display: block;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 60px;
+    padding-top: 61px;
 }
-.slideshowarea{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    width: 100%;
-    background-color: rgb(238, 237, 237);
-    cursor: pointer;
-}
-.slider__image {
-    height: 100%;
-    width: 100%;
+.video {
+    display: block;
+    margin: 0 auto;
+    height: 110%;
+    width: 100vw;
 }
 .slideshow__btn {
     transition: 0.25s;
@@ -56,6 +48,7 @@
 
 .helparea{
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -97,28 +90,33 @@
     
 }
 
-.login__bg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    position: fixed;
-    top:1000;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.801);
-    transform: 2s;
+.close {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
 }
+
 .login {
-    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: none;
     flex-direction: column;
     text-align: center;
-    gap: 30px;
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
+    z-index: 99;
     height: 400px;
     width: 400px;
     padding: 50px;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1000px rgba(0, 0, 0, 0.808);
 }
 .login__title {
     color: #000000f1;
@@ -137,6 +135,10 @@
     border-bottom: solid 2px #0095f8be;
     font-size: 25px;
 }
+.login__input::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+}   
 .login__btn {
     height: 40px;
     width: 300px;
@@ -154,8 +156,6 @@
     font-size: 14px;
 }
 
-
-.login__input::placeholder {
-    font-size: 15px;
-    font-weight: 100;
+::-webkit-scrollbar {
+    width: 5px;
 }
